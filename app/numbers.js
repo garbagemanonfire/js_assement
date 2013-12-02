@@ -3,15 +3,15 @@ if (typeof define !== 'function') { var define = require('amdefine')(module); }
 define(function() {
   return {
     valueAtBit: function(num, bit) {
-        var x = num.toString(2);
-        x = String("00000000" + x).slice(-8);
-        var y = bit - 8;
-        var z = x.charAt(y);
-        return parseInt(z);
+        // var x = num.toString(2);
+        // x = String("00000000" + x).slice(-8);
+        // var y = bit - 8;
+        // var z = x.charAt(y);
+        // return parseInt(z);
     },
 
     base10: function(str) {
-
+      return parseInt(str, 2);
     },
 
     convertToBinary: function(num){

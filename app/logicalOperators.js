@@ -8,7 +8,6 @@ define(function() {
         } else {
             return false;
         }
-
     },
 
     and : function(a, b) {
@@ -17,7 +16,6 @@ define(function() {
         } else {
             return false;
         }
-
     }
   };
 });
