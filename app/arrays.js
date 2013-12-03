@@ -13,10 +13,21 @@ define(function() {
     },
 
     remove : function(arr, item) {
-
+      for (var i = 0; arr.length > i; i++) {
+        if (arr[i] === item){
+          arr.splice(i, 1);        }
+      }
+      return arr;
     },
 
     removeWithoutCopy : function(arr, item) {
+        for(var i = arr.length; i--;) {
+            if (arr[i] === item) {
+                arr.splice(i, 1);
+            }
+        }
+
+        return arr;
 
     },
 
@@ -26,7 +37,8 @@ define(function() {
     },
 
     truncate : function(arr) {
-
+        arr.pop();
+        return arr;
     },
 
     prepend : function(arr, item) {
@@ -35,7 +47,8 @@ define(function() {
     },
 
     curtail : function(arr) {
-
+        arr.shift();
+        return arr;
     },
 
     concat : function(arr1, arr2) {
@@ -49,14 +62,36 @@ define(function() {
     },
 
     count : function(arr, item) {
-
+    var count = 0, i = 0;
+      for (i; arr.length > i; i++) {
+        if(arr[i] === item){
+          count += 1;
+        };
+      }
+    return count;
     },
 
     duplicates : function(arr) {
 
+    // var count = 0, i = 0;
+    //   for (i; arr.length > i; i++) {
+    //     if(arr[i] === item){
+    //       count += 1;
+    //     };
+    //   }
+
+    //   return count;
     },
 
     square : function(arr) {
+      var count = 0, i = 0;
+      for (i; arr.length > i; i++) {
+        if(arr[i] === item){
+          count += 1;
+        };
+      }
+
+      return count;
 
     },
 
