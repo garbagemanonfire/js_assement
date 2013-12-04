@@ -84,14 +84,11 @@ define(function() {
     },
 
     square : function(arr) {
-      var count = 0, i = 0;
-      for (i; arr.length > i; i++) {
-        if(arr[i] === item){
-          count += 1;
-        };
+      function squared (val){
+        var squares = (val * val);
+        return squares; 
       }
-
-      return count;
+      return arr.map(squared);
 
     },
 
